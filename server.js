@@ -1,6 +1,6 @@
 const http = require('http');
 const https = require('https');
-const GROQ_API_KEY = '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';
+const GROQ_API_KEY = process.env.GROQ_API_KEY;
 const server = http.createServer((req, res) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
